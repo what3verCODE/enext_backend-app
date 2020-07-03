@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Entity\Messaging\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Entity\Messaging\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Entity\Messaging\**" />
+    </ItemGroup>
+
+</Project>

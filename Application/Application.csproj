@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+      <PackageReference Include="FluentValidation" Version="8.6.2" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Mediator\Classes\Commands\AddStudent" />
+      <Folder Include="Mediator\Classes\Commands\CreateClass" />
+      <Folder Include="Mediator\Classes\Commands\DeleteClass" />
+      <Folder Include="Mediator\Classes\Commands\DeleteStudent" />
+      <Folder Include="Mediator\Classes\Commands\UpdateClass" />
+      <Folder Include="Mediator\Classes\Queries\GetClass" />
+      <Folder Include="Mediator\Classes\Queries\GetClasses" />
+      <Folder Include="Mediator\Comments\Commands\LikeComment" />
+      <Folder Include="Mediator\Courses\Commands\DeleteCourse" />
+      <Folder Include="Mediator\Identity" />
+      <Folder Include="Mediator\Progresses\Commands\UpdateProgress" />
+      <Folder Include="Mediator\Subscriptions\Queries" />
+      <Folder Include="Messaging" />
+    </ItemGroup>
+
+</Project>
